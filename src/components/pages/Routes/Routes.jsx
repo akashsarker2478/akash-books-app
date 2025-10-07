@@ -18,7 +18,7 @@ import Readlist from '../readlist/Readlist';
         {
             index:true,
             path:'/',
-            loader:()=> fetch('BooksData.json'),
+            loader:()=> fetch('../BooksData.json'),
             Component:Home
         },
         {
@@ -27,12 +27,12 @@ import Readlist from '../readlist/Readlist';
         },
         {
           path:'/bookDetails/:id',
-          loader: ()=>fetch('/BooksData.json'),
+          loader: ()=>fetch('..//BooksData.json'),
           Component:BookDetails,
         },
         {
           path :'/readlist',
-           loader: ()=>fetch('/BooksData.json'),
+           loader: ()=>fetch('..//BooksData.json'),
           Component:Readlist,
         }
     ]
